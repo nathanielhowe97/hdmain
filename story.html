@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="HowesDecor is a family-run company in the Okaloosa area that sells refurbished furniture and pieces of art.">
+		<meta name="keywords" content="howesdecor, furniture, okaloosa">
+		<title>howesDecor - Home</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		
+		<style>		
+			.hero{
+				width: 100%;
+				height: 100vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+				color:#ededed; 
+				background-image: url('images/hero_story.png');
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				
+			}
+
+			.hero h1{
+				font-size:70px;
+			}
+
+			.hero a{
+				font-size:35px;
+				text-decoration:none;
+				color:#ededed;
+				padding:15px;
+				border:3px solid #ededed;
+				transition:0.3s ease;
+				border-radius:15px;
+			}
+
+			.hero a:hover{
+				color:#333;
+				background-color:#ededed;	
+			}
+			
+			span{
+				-webkit-transform: rotate(90deg);
+				display:inline-block;
+				border-radius:10000px;
+			}
+		</style>
+	</head>
+
+	<nav>	
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a class="active" href="story.html"><strong>Our Story</strong></a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+	
+	
+	
+	
+	<body>
+		<section class="hero">
+			<div class="hero-inner">
+				<h1>howesDecor.</h1>
+				<a href="#story">Know our story <span>&#10162;</span></a>
+			</div>
+		</section>
+	<main>
+			<footer>
+				<div class="findus">
+				<h2>Find Us</h2>
+				<div class="in-person">
+					<h3>Find us in person</h3>
+					<address>Booth 28, <br>74b Beal Pkwy NW,<br>Fort Walton Beach, FL 32548</address>
+				</div>
+				<div class="socials">
+					<h3>Find us on our socials</h3>
+					<a href="https://www.instagram.com/howesdecor/" target="_blank">Instagram</a><br>
+					<a href="https://www.facebook.com/howesdecor/" target="_blank">Facebook</a>
+				</div>
+				</div>
+				<div class="bottom-nav">
+					<a class="subtleactive" href="index.html">Home</a> |
+					<a href="products.html">Products</a> |
+					<a href="story.html">Our Story</a> |
+					<a href="blog.html">Blog</a> |
+					<a href="contact.html">Contact Us</a>
+				</div>
+				<div class="copy">
+					&copy; Copyright 2023, howesDecor.
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>
