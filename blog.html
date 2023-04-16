@@ -2,10 +2,11 @@
 
 <html lang="en">
 	<head>
+	
 		<meta charset="UTF-8">
 		<meta name="description" content="HowesDecor is a family-run company in the Okaloosa area that sells refurbished furniture and pieces of art.">
 		<meta name="keywords" content="howesdecor, furniture, okaloosa">
-		<title>howesDecor - Blog</title>
+		<title>Blog</title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		
 		<style>		
@@ -24,6 +25,7 @@
 				background-attachment: fixed;
 				
 			}
+			
 
 			.hero h1{
 				font-size:70px;
@@ -36,7 +38,7 @@
 				padding:15px;
 				border:3px solid #ededed;
 				transition:0.3s ease;
-				border-radius:15px;
+				border-radius:45px;
 			}
 
 			.hero a:hover{
@@ -44,13 +46,15 @@
 				background-color:#ededed;	
 			}
 			
-			span{
+            span{
 				-webkit-transform: rotate(90deg);
 				display:inline-block;
 				border-radius:10000px;
 			}
 		</style>
 	</head>
+	
+	<body>
 
 	<nav>	
 		<ul>
@@ -62,59 +66,56 @@
 		</ul>
 	</nav>
 	
-	
-	
-	
-	<body>
-		<section class="hero">
-			<div class="hero-inner">
-				<h1>howesDecor.</h1>
-				<a href="#blog">Keep up to date<span>&#10162;</span></a>
-			</div>
-		</section>
+	<section class="hero">
+		<div class="hero-inner">
+			<h1>Our blog</h1>
+			<a href="#blog">Keep up to date <span>&#10162;</span></a>
+		</div>
+	</section>
+
 		<main>
-			<article>
-				<h1 id="blog">Our blog</h1>
-				<!--code explanation: divs surround the different components of the message. to create a new post, simply copy & paste the <div class="entry" and everything in it, then paste it ABOVE the last message. this system is inefficient but it works for now. change the text in the <strong></strong> to the post's title, and change the date behind the &middot; to today's date. share and reupload.
-				if an image is required, use an <a href="images/imagenamegoeshere" target="_blank">View Image</a>
-				-->
-				<div class="entry">
-					<div class="post-header"><p><strong>Lorem Ipsum</strong> &middot; 0/0/00</p></div>
-					<div class="post-content">Facilisi nullam vehicula ipsum a arcu cursus vitae. Vehicula ipsum a arcu cursus vitae congue.</div>
-				</div>
-				<div class="entry">
-					<div class="post-header"><p><strong>Sit Amet</strong> &middot; 0/0/00</p></div>
-					<div class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-					<a href="images/products/bar.jpg" target="_blank">View image</a>
-				</div>
-				<div class="entry">
-					<div class="post-header"><p><strong>Website released</strong> &middot; 4/16/23</p></div>
-					<div class="post-content">Our website was released today, share it with your friends!</div>
-				</div>
-				
-			</article>
+            <article>
+                    <h1 id="blog">Our blog</h1>
+                <div class="blog-container">
+                    <!--when a new entry is needed, create a new div "entry" below this comment (MAKE SURE IT IS ABOVE THE LAST) and a div "header" and a div "content" and 
+                        change the information to match. if an image is needed, copy and paste the commented out "a" tag in the first entry.-->
+                    <div class="entry">
+                        <div class="header">
+                            <p><strong>Website released</strong> &middot; 4/16/23</p>
+                        </div>
+                        <div class="content">
+                            <p>The website was released to the public under a GitHub account.</p>
+                            <!--<a href="images/products/bar.jpg" alt="Bar product" target="_blank">View image</a>-
+                                this comment is to keep this as a reference for the future of anytime an image is needed to be provided-->
+                        </div>
+                    </div>
+                </div>
+               
+            </article>
 			<footer>
 				<div class="findus">
-					<h2>Find Us</h2>
-					<div class="in-person">
-						<h3>Find us in person</h3>
-						<address>Booth 28, <br>74b Beal Pkwy NW,<br>Fort Walton Beach, FL 32548</address>
-					</div>
-					<div class="socials">
-						<h3>Find us on our socials</h3>
-						<a href="https://www.instagram.com/howesdecor/" target="_blank">Instagram</a><br>
-						<a href="https://www.facebook.com/howesdecor/" target="_blank">Facebook</a>
-					</div>
+				<div class="in-person">
+					<h3>Find us &mdash;</h3>
+					<address>Booth 28, 74b Beal Pkwy NW, Fort Walton Beach, FL 32548</address>
+					<a href="mailto:nathaniel.s.howe@gmail.com">nathaniel.s.howe@gmail.com</a>
 				</div>
-				<div class="bottom-nav">
-					<a class="subtleactive" href="index.html">Home</a> |
-					<a href="products.html">Products</a> |
-					<a href="story.html">Our Story</a> |
-					<a href="blog.html">Blog</a> |
-					<a href="contact.html">Contact Us</a>
+				<div class="socials">
+					<h3>Follow us &mdash;</h3>
+					<a href="https://www.instagram.com/howesdecor/" target="_blank">Instagram</a> &middot;
+					<a href="https://www.facebook.com/howesdecor/" target="_blank">Facebook</a>
 				</div>
-				<div class="copy">
-					&copy; Copyright 2023, howesDecor.
+				</div>
+				<div class="bottom">
+					<div class="bottom-nav">
+						<a class="subtleactive" href="index.html">Home</a> |
+						<a href="products.html">Products</a> |
+						<a href="story.html">Our Story</a> |
+						<a href="blog.html">Blog</a> |
+						<a href="contact.html">Contact Us</a>
+					</div>
+					<div class="copy">
+						&copy; Copyright 2023, howesDecor.
+					</div>
 				</div>
 			</footer>
 		</main>
