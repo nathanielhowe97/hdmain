@@ -1,17 +1,5 @@
 /**FOR ALL PAGES*/
 
-details > summary::-webkit-details-marker {
-	display: none;
-  }
-
-  summary{
-	position:absolute;
-	right:0;
-	top:0;
-	padding:.75em;
-	cursor:pointer;
-	list-style: none;
-}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -116,6 +104,19 @@ nav{
 	}
 }
 
+details > summary::-webkit-details-marker {
+	display: none;
+  }
+
+  summary{
+	position:absolute;
+	right:0;
+	top:0;
+	padding:.75em;
+	cursor:pointer;
+	list-style: none;
+}
+
 .hidden-links{
 	margin-left:.4rem;
 
@@ -207,7 +208,6 @@ nav{
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 
 	& > *{
 		margin-block: 1rem;
