@@ -1,102 +1,98 @@
-function article1(){
-    let month = document.querySelector('#month1')
-    let day = document.querySelector('#day1')
-    let year = document.querySelector('#year1')
+var blogContainer = document.getElementById('blog-container')
+var templatePost = document.getElementById('blog-post');
 
-    let time = document.querySelector('#time1')
+templatePost.style.display = "none"
 
-    let tags = document.querySelector('#tag1')
+function cloneNode61323(){
+    //creating blog
+    var newPost = templatePost.cloneNode(true);
+    newPost.setAttribute('id', "blog-2")
 
-    let header = document.querySelector('#header1')
-    let content = document.querySelector('#description1')
+    newPost.style.display = "block"
 
-    let cta = document.querySelector('#href1')
+    blogContainer.appendChild(newPost);
 
-    month.textContent = "June"
-    day.textContent = "12"
-    year.textContent = "2023"
-    time.textContent = "1"
+    //blog content
+    let children = newPost.children
+    children[0].id = "date2"
+    children[1].id = "tags2"    
 
-    tags.textContent = allTags[1]
+    children[2].children[0].id = "header2"
+    children[3].children[0].id = "content2"
 
-    header.textContent = "New upcycled wooden camera"
-    content.textContent = "It's been a little while since we've done an upcycled wooden camera. This one was dropped off to the booth yesterday."
+    children[4].children[0].id = "href2"
+    children[4].children[0].children[0].id = "link2"
 
-    cta.textContent = "See attached image"
+    date2.textContent = "June 13, 2023 · 1 min read"
+    tags2.textContent = allTags[2]
+    
+    header2.textContent = "Snoopy bookends"
+    content2.textContent = "Sometimes you come across a treasure that you just need to keep for yourself - like these vintage hand carved Snoopy bookends."
 
-    let href = "images/products/upcycled_camera.jpg"
-    cta.setAttribute('href', href)
+    href2.setAttribute('href', 'images/products/snoopy.jpg')
+    link2.textContent = "See attached image"
 }
+cloneNode61323()
 
-article1()
+function cloneNode61223(){
+    //creating blog
+    var newPost = templatePost.cloneNode(true);
+    newPost.setAttribute('id', "blog-1")
 
-function article2(){
-    let month = document.querySelector('#month2')
-    let day = document.querySelector('#day2')
-    let year = document.querySelector('#year2')
+    newPost.style.display = "block"
 
-    let time = document.querySelector('#time2')
+    blogContainer.appendChild(newPost);
 
-    let tags = document.querySelector('#tag2')
+    //blog content
+    let children = newPost.children
+    children[0].id = "date1"
+    children[1].id = "tags1"    
 
-    let header = document.querySelector('#header2')
-    let content = document.querySelector('#description2')
+    children[2].children[0].id = "header1"
+    children[3].children[0].id = "content1"
 
-    let cta = document.querySelector('#href2')
+    children[4].children[0].id = "href1"
+    children[4].children[0].children[0].id = "link1"
 
-    month.textContent = "June"
-    day.textContent = "11"
-    year.textContent = "2023"
-    time.textContent = "1"
+    date1.textContent = "June 12, 2023 · 1 min read"
+    tags1.textContent = allTags[0]
+    
+    header1.textContent = "Upcycled wooden camera"
+    content1.textContent = "It's been a little while since we've done an upcycled wooden camera. This one was dropped off to the booth yesterday."
 
-    tags.textContent = allTags[1]
-
-    header.textContent = "New handcrafted table"
-    content.textContent = "Introducing to the booth, this gorgeous piece. Personally, I love the texture in the boards. It is made from reclaimed wood and would make a great bar, island, or shelving system."
-
-
-    cta.textContent = "See attached image"
-
-    let href = "images/products/table.jpg"
-    cta.setAttribute('href', href)
+    href1.setAttribute('href', 'images/products/upcycled_camera.jpg')
+    link1.textContent = "See attached image"
 }
+cloneNode61223()
 
-article2()
+function cloneNode61123(){
+    //creating blog
+    var newPost = templatePost.cloneNode(true);
+    newPost.setAttribute('id', "blog-0")
 
-function article3(){
-    //      simply adjust the number below here       [for each one]
-    let month = document.querySelector('#month3')
-    let day = document.querySelector('#day3')
-    let year = document.querySelector('#year3')
+    newPost.style.display = "block"
 
-    let time = document.querySelector('#time3')
+    blogContainer.appendChild(newPost);
 
-    let tags = document.querySelector('#tag3')
+    //blog content
+    let children = newPost.children
+    children[0].id = "date0"
+    children[1].id = "tags0"    
+    children[2].children[0].id = "header0"
+    children[3].children[0].id = "content0"
+    children[4].children[0].id = "href0"
+    children[4].children[0].children[0].id = "link0"
 
-    let header = document.querySelector('#header3')
-    let content = document.querySelector('#description3')
+    date0.textContent = "June 11, 2023 · 1 min read"
+    tags0.textContent = allTags[0]
+    
+    header0.textContent = "Handcrafted wood table"
+    content0.textContent = "Dropped this gorgeous handcrafted piece off at the booth today. I love all the character on the boards.\nIt's made from reclaimed wood and would make a great bar, island, or shelving system. I have a similar one that we made a few years ago that is used as a coffee bar."
 
-    let cta = document.querySelector('#href3')
-
-    //change the text   here to adjust the content of the post
-    month.textContent = "June"
-    day.textContent   = "8"
-    year.textContent  = "2023"
-    time.textContent  = "1"
-
-    tags.textContent = allTags[1]
-
-    header.textContent = "Quote blocks returning soon"
-    content.textContent = "These hanging wooden quote blocks are popular sellers. Each block is hand stamped and at only $5 each they make a great gift for someone who needs a pick me up, or just for yourself. This next round will be hitting the booth tomorrow morning and will feature Bible Verses and encouraging quotes."
-
-
-    cta.textContent = "See attached image"
-
-    let href = "images/products/quote_blocks.jpg"
-    cta.setAttribute('href', href)
+    href0.setAttribute('href', 'images/products/upcycled_table.jpg')
+    link0.textContent = "See attached image"
 }
-
-article3()
+cloneNode61123()
 
 
 

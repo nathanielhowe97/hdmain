@@ -1,7 +1,7 @@
 let allTags = [
-    "general",
     "product",
     "sale",
+    "general",
     "holiday",
     "returning",
     "store"
