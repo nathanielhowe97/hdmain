@@ -11,9 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="blog.css">
 	
-	<script defer src="javascript/nav.js"></script>
 	<script defer src="javascript/tags.js"></script>
-	<script defer src="javascript/article1.js"></script>
 	<script defer src="javascript/article2.js"></script>
 	
 
@@ -22,28 +20,6 @@
     <style></style>
 </head>
 <body>
-	
-<noscript>
-	<span id="alert"> </span>This page requires Javascript to run properly. Visit <a href="https://www.enable-javascript.com/" target="_blank">enable-javascript.com</a> if you don't know how.
-	<style>
-		noscript{
-			background-color: #FDFCFC;
-			padding:.5rem;
-
-			& > a{
-				color:#101010;
-			}
-		}
-
-		nav details{
-			position: absolute;
-			top:2rem;
-			right:1rem;
-		}
-	</style>
-</noscript>
-
-
 	<nav>
 		<div class="logo-container">
 			<a href="index.html" class="logo"><img src="images/logo.png" alt="howes decor logo" width="32" height="32"></a>
@@ -68,69 +44,35 @@
 				<section class=" page-about about">
 					<h2 class="article-header">Our blog</h2>
 				</section>
-				<div class="blog-container">
-					<section class="blog-post">
-						<div class="blog-dates">
-							<p id="date0001" class="date">
-								<span id="month1">{mon}</span>
-								<span id="day1">{day}</span>,
-								<span id="year1">{yr}</span> &middot;
-								<span id="time1">{time}</span> min read</p>
-						</div>
-						<div class="blog-tags">
-							<span id="tag1" class="tags">{tag}</span>
-						</div>
-						<div class="blog-header">
-							<h3><span id="header1">{header}</span></h3>
-						</div>
-						<div class="blog-content">
-							<p class="content"><span id="description1">{short description}</span><p></div>
-						<div class="blog-cta">
-							<p class="cta"><a id="href1" class="read-more" href="#" target="_blank"><span id="cta-text1">See attached image</span></a></p>
-						</div>
-					</section>
-					<section class="blog-post">
-						<div class="blog-dates">
-							<p id="date0002" class="date">
-								<span id="month2">{mon}</span>
-								<span id="day2">{day}</span>,
-								<span id="year2">{yr}</span> &middot;
-								<span id="time2">{time}</span> min read</p>
-						</div>
-						<div class="blog-tags">
-							<span id="tag2" class="tags">{tag}</span>
-						</div>
-						<div class="blog-header">
-							<h3><span id="header2">{header}</span></h3>
-						</div>
-						<div class="blog-content">
-							<p class="content"><span id="description2">{short description}</span><p></div>
-						<div class="blog-cta">
-							<p class="cta"><a id="href2" class="read-more" href="#" target="_blank"><span id="cta-text2">See attached image</span></a></p>
-						</div>
-					</section>
 
-					<section class="blog-post">
-						<div class="blog-dates">
-							<p id="date0003" class="date">
-								<span id="month3">{mon}</span>
-								<span id="day3">{day}</span>,
-								<span id="year3">{yr}</span> &middot;
-								<span id="time3">{time}</span> min read</p>
+				<noscript>This page requires Javascript to be enabled to function properly. Visit <a href="https://www.enable-javascript.com/" target="_blank">www.enable-javascript.com/</a> if you need assitance.</noscript>
+
+				<!-- template blog -->
+				<div id="blog-container" class="blog-container">
+					<section id="blog-post" class="blog-post">
+						<div id="blog-dates" class="blog-dates">
+							<span id="month">{mon}</span>
+							<span id="day">{day}</span>,
+							<span id="year">{year}</span>
+							<span>&middot;</span>
+							<span id="time">{time}</span>
 						</div>
-						<div class="blog-tags">
-							<span id="tag3" class="tags">{tag}</span>
+						<div id="blog-tags" class="blog-tags">
+							<span id="tag" class="tags">{tag}</span>
 						</div>
-						<div class="blog-header">
-							<h3><span id="header3">{header}</span></h3>
+						<div id="blog-header" class="blog-header">
+							<h3 id="header" class="header">{header}</h3>
 						</div>
-						<div class="blog-content">
-							<p class="content"><span id="description3">{short description}</span><p></div>
-						<div class="blog-cta">
-							<p class="cta"><a id="href3" class="read-more" href="#" target="_blank"><span id="cta-text3">See attached image</span></a></p>
+						<div id="blog-content" class="blog-content">
+							<p id="content" class="content">{content}</p>
+						</div>
+						<div id="blog-cta" class="blog-cta">
+							<a href="#" target="_blank" id="href" class="read-more"><span id="cta-text" class="cta-text cta">{link}</span></a>
 						</div>
 					</section>
 				</div>
+
+				
 			</div>
         </article>
     </main>

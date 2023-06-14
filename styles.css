@@ -148,66 +148,6 @@ noscript{
 	bottom:1rem;
 }
 
-
-/*---not updated yet---*/
-
-
-/*
-	.nav{
-    color:#e1e1e1;
-    background-color: #000000;
-
-    padding:.75rem;
-
-	text-align: left;
-	display: flex;
-	align-items: center;
-
-    list-style-type: none;
-}
-
-.nav-link{
-	display:inline-block;
-
-    text-decoration: none;
-
-	margin-right:1rem;
-
-	color: #f1f1f1;
-
-    &:hover, &:active{
-        text-decoration: underline;
-        text-underline-offset: .15rem;
-        text-decoration-thickness: .1rem;
-    }
-
-	&:focus-visible{
-		text-decoration:none;
-	}
-} 
-
-.cart{
-	font-size:1.25rem;
-	font-weight: 400;
-
-	position: absolute;
-	right:2.5rem;
-	top:0.5rem;
-
-	padding-block:.25rem;
-	padding-inline: .25rem;
-	border-radius:50%;
-
-	background-color: rgb(68, 68, 68, 0);
-
-	transition: linear .3s;
-
-	&:hover, &:focus, &:active{
-		background-color:#444;
-	}
-} */
-
-
 .hero{
 	width: 100%;
 	height: 100vh;
@@ -221,7 +161,7 @@ noscript{
 
 	color:#ededed; 
 
-	background-size: cover;
+	background-size: 100% 100vh;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -300,10 +240,18 @@ article, footer{
 	& > div > h4{
 		margin-bottom:.5rem;
 		font-size:1.25rem;
+		text-wrap:balance;
 	}
+	
+}
+
+@media screen and (max-width:715px){
+
 }
 
 .footer-link, address, img, .email{
+	
+
 	font-size:1rem;
 	display:inline-block;
     text-decoration: none;
@@ -324,7 +272,6 @@ article, footer{
 
 	&.email{
 		margin:0;
-		word-break: break-all;
 	}
 }
 
@@ -349,6 +296,8 @@ article, footer{
 		grid-template-rows: 1fr 1fr;
 
 		margin-bottom:-5rem;
+		
+		gap:2rem;
 	}
 }
 
