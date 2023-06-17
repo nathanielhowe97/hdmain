@@ -22,6 +22,7 @@ function cloneNode61323(){
 
     children[4].children[0].id = "href2"
     children[4].children[0].children[0].id = "link2"
+    
 
     date2.textContent = "June 13, 2023 · 1 min read"
     tags2.textContent = allTags[2]
