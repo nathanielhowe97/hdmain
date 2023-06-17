@@ -3,25 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="howesDecor. is a brand local to the Okaloosa FL. area which refurbishes furniture at our booth in an antique store.">
+    <meta name="description" content="See the products of howesDecor., a a brand local to the Okaloosa FL. area which refurbishes furniture at our booth in an antique store.">
 	<meta name="keywords" content="howesdecor, furniture, okaloosa">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
-	
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="shop.css">
 	
-	<script defer src="javascript/nav.js"></script>
+	<script defer src="javascript/tags.js"></script>
+	<script defer src="javascript/shop-controller.js"></script>
+	
 
-    <title>Home</title>
+    <title>Shop</title>
 
-    <style>
-		.wrapper{
-			width: 100%;
-			margin-block:2rem;
-
-		}
-	</style>
+    <style></style>
 </head>
 <body>
 	<nav>
@@ -32,11 +28,10 @@
 			<details id="hidden-links" class="hidden-links">
 					<summary><span id="hamburger" class="material-symbols-outlined">menu</span></summary>
 					<ul>
-						 <li><h4>Navigation &mdash;</h4></li>
-						 <li><a class="nav-link active" href="index.html">Home</a></li>
-						<li><a class="nav-link" href="shop.html">Shop</a></li>
-						<!-- <li><a class="nav-link" href="about.html">About</a></li> -->
-						
+						<li><h4>Navigation &mdash;</h4></li>
+						 <li><a class="nav-link" href="index.html">Home</a></li>
+						 <li><a class="nav-link active" href="shop.html">Shop</a></li>
+						<!--<li><a class="nav-link" href="about.html">About</a></li> -->
 						<li><a class="nav-link" href="blog.html">Blog</a></li>
 						<!-- <li><a class="nav-link" href="contact.html">Contact</a></li> -->
 					</ul>
@@ -44,22 +39,38 @@
 		</div>
 	</nav>
 
-    <header>
-        <section class="hero hero1">
-           <img src="images/logo_thin.png" alt="howes decor logo">
-            <a href="#" class="hero-cta">See our products</a>
-        </section>
+    <main>
+        <article>
+			<div class="wrapper">
+				<section class=" page-about about">
+					<h2 class="article-header">Shop</h2>
+				</section>
 
-        <section class="hero hero2">
-            <h2 id="red" class="hero-header">Our story</h2><br>
-            <a href="about.html" class="hero-cta">Get to know us</a>
-        </section>
+				<noscript>This page requires Javascript to be enabled to function properly. We use Javascript to dynamically render the page items for ease of edit. Visit <a href="https://www.enable-javascript.com/" target="_blank">www.enable-javascript.com/</a> if you need assitance.</noscript>
 
-        <section class="hero hero3">
-            <h2 class="hero-header">Our blog</h2>
-            <a href="blog.html" class="hero-cta">Keep up to date</a>
-        </section>
-    </header>
+				<!-- template item -->
+				<div id="shop-container" class="shop-container">
+					<section id="shop-item" class="shop-item">
+                        <div id="shop-image" class="shop-image">
+							<img id="image" class="shop-item-image" src="images/products/table.jpg" alt="Table">
+						</div>
+                        <div id="shop-header" class="shop-header">
+							<h3 id="header" class="header">{header}</h3>
+						</div>
+						<div id="shop-tags" class="shop-tags">
+							<span id="tag" class="tags">{tag}</span>
+						</div>
+						
+						<div id="shop-content" class="shop-content">
+							<p id="content" class="content">{content}</p>
+						</div>
+					</section>
+				</div>
+
+				
+			</div>
+        </article>
+    </main>
 
     <footer>
 		<div class="center">
@@ -80,10 +91,10 @@
 
 			<div class="navigation">
 				<a class="footer-link" href="index.html">Home</a> | 
-				<!-- <a class="footer-link" href="shop.html">Shop</a> |
-				<a class="footer-link" href="about.html">About</a> | -->
-				<a class="footer-link" href="blog.html">Blog</a> <!--|-->
-				<!-- <a class="footer-link" href="contact.html">Contact</a> -->
+				<a class="footer-link" href="shop.html">Shop</a> |
+				<a class="footer-link" href="about.html">About</a> |
+				<a class="footer-link" href="blog.html">Blog</a> |
+				<a class="footer-link" href="contact.html">Contact</a>
 			</div>
 			<div class="legal">
 				<p>&copy; Copyright 2023, howesDecor.</p>

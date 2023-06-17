@@ -44,6 +44,10 @@ html, body{
 
 nav ul{
 	list-style-type:none;
+
+	& > li{
+		margin-block:.05rem;
+	}
 }
 
 .nav-links-container{
@@ -245,13 +249,15 @@ article, footer{
 	
 }
 
+.shop-item:hover{
+	box-shadow:0px  0px 5px 0px #7e7e7e41;
+}
+
 @media screen and (max-width:715px){
 
 }
 
 .footer-link, address, img, .email{
-	
-
 	font-size:1rem;
 	display:inline-block;
     text-decoration: none;
@@ -273,6 +279,12 @@ article, footer{
 	&.email{
 		margin:0;
 	}
+}
+
+.follow img:hover{
+	background-color: transparent;
+	border-radius: 50%;
+	outline:5px solid #dcdcdc;
 }
 
 .navigation, .navigation a, .legal{
@@ -303,13 +315,38 @@ article, footer{
 
 .active{
 	text-decoration: underline;
-	text-decoration-thickness: .2rem;
-	text-underline-offset: .2rem;
+	text-decoration-thickness: .1rem;
+	text-underline-offset: .1rem;
 
 	&:hover{
-		text-decoration-thickness: .2rem;
-		text-underline-offset: .2rem;
+		text-decoration-thickness: .1rem;
+		text-underline-offset: .1rem;
 	}
+}
+
+.cta{
+    font-size:.75rem;
+    margin-block:0.75rem 0;
+    background-color: var(--primary-button);
+    background-color: #404040;
+    color: #f1f1f1;
+    display:inline-block;
+    padding:.4rem 1.2rem;
+    border-radius:.25rem;
+
+    transition: linear .3s;
+
+    cursor: pointer;
+
+    & > a{
+        color: #FFF;
+        text-decoration:none;
+    }
+
+    &:hover{
+        background-color: var(--accent);
+        background-color: #0d0d0d;
+    }
 }
 
 
