@@ -1,6 +1,6 @@
-# nathanielhowe.github.io
+# hdmain
 
-this is currently being used to host howesdecor's website, eventually i'll send it off to a unique respitory for it but in the mean time it's being put here.
+this is currently being used to host howesdecor's website by being linked to netlify
 
 ## To Do
 1. finish up all pages - ideally that would be the 2.0 update
