@@ -16,7 +16,7 @@ this is currently being used to host howesdecor's website by being linked to net
 ## Currently working on (1.4.2) Released mid July
 1. implementing fallbacks (no JS, features not available due to browser support)
 
-## Up next (1.5.0) - Released mid/late July
+## Up next (1.5.0) - Released late July
 1. Reworking homepage
 2. Reworking nav menu
 3. Rework featured item logic, make it similar to the blog page
