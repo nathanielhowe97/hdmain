@@ -16,3 +16,4 @@ this is currently being used to host howesdecor's website by being linked to net
 ## Up next (1.5.0)
 1. Reworking homepage
 2. Reworking nav menu
+3. Rework featured item logic, make it similar to the blog page
