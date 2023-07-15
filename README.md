@@ -10,10 +10,39 @@ this is currently being used to host howesdecor's website by being linked to net
 3.2 - progress on making the home page more of a homepage has already started, now includes a featured item section which shows some of the newest items in the booth. althought it does need work and will be fixed in 1.5.0
 5. perhaps implement howesdecorlinks.netlify.app into the homepage as well, just like a quick info thing to show what we're about...etc
 
-## Currently working on (1.4.2)
+## Roadmap
+### All dates listed here are subject to change depending on how development goes
+
+## Currently working on (1.4.2) Released mid July
 1. implementing fallbacks (no JS, features not available due to browser support)
 
-## Up next (1.5.0)
+## Up next (1.5.0) - Released mid/late July
 1. Reworking homepage
 2. Reworking nav menu
 3. Rework featured item logic, make it similar to the blog page
+
+## Up next (1.6.0) - Released early August
+1. Reworking shops page
+2. Reworking shop page logic, inspired by blog page
+3. Cleaner JS code
+4. Noscript fallbacks / unsupported CSS fallbacks
+
+## Up Next (1.7.0) - Released mid/late august
+1. Creating about page
+2. Experiment with JS/MD to render page content
+
+## Up next (1.8.0) Released early September
+1. Contact page
+2. Experiment with forms to send email on submission
+
+## Up next (1.9.0) Released mid/late September
+1. Polishing website, fixing any bugs remaining
+2. Use consistent design decisions and styles throughout the whole website
+3. Clean up CSS code
+4. Brainstorm any other functionalities which could improve UX
+5. Prepare release to public
+
+## Up Next (2.0.0) Released early October
+1. Release to public under temporary domain howesdecor.netlify.app
+2. Continue polishing website and creating more blogs, updating content as it comes, etc.
+   
