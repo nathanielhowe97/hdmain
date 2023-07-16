@@ -14,10 +14,14 @@ here is the Trello board for this: [Trello board](https://trello.com/b/YrxJq3GR/
 ## Roadmap
 ### All dates listed here are subject to change depending on how development goes
 
-## Currently working on (1.5.0) - Released late July
-1. Reworking homepage
+## Currently working on (1.5.0-beta) - Released 7/16/23
+1. ~~Reworking homepage~~
 2. ~~Reworking nav menu~~
 3. ~~Rework featured item logic, make it similar to the blog page~~
+### Still working on (1.5.0-main) - Released mid/late July
+1. Using consistent design styles
+2. Implementing more sections to homepage to make it more inviting, desscriptive, etc
+3. Rewriting CSS code to be more efficient and removing any redundant/repeated code for faster load times and less load on server, as well as better readability
 
 ## Up next (1.6.0) - Released early August
 1. Reworking shops page
