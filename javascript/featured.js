@@ -1,73 +1,58 @@
-let featuredItem1 = document.querySelector('#post1')
-let image1 = document.querySelector('#image1')
-let title1 = document.querySelector('#title1')
-let price1 = document.querySelector('#price1')
-let   tag1 = document.querySelector  ('#tag1')
+const featuredContainer = document.querySelector('.featured-container')
 
-let featuredItem2 = document.querySelector('#post2')
-let image2 = document.querySelector('#image2')
-let title2 = document.querySelector('#title2')
-let price2 = document.querySelector('#price2')
-let   tag2 = document.querySelector  ('#tag2')
-
-let featuredItem3 = document.querySelector('#post3')
-let image3 = document.querySelector('#image3')
-let title3 = document.querySelector('#title3')
-let price3 = document.querySelector('#price3')
-let   tag3 = document.querySelector  ('#tag3')
-
-let allTags = [
-    "Furniture",
-    "Wall decor",
-    "Decoration",
-    "Lighting",
-    "Other"
+const featuredTags = [
+    "Furniture",  //0
+    "Wall decor", //1
+    "Decoration", //2
+    "Lighting",   //3
+    "Other"       //4
 ]
 
-let featuredItemDesc1 = {
-    postImage: "images/products/ironing_board.jpg",
-    postTitle: "Refurbished ironing board",
-    postPrice: "74.99",
-    postTag: allTags[0]
+function setFeaturedInnerHTML(){
+    featuredContainer.innerHTML += '<div class="featured" id="featured-1"></div>'
+    featuredContainer.innerHTML += '<div class="featured" id="featured-2"></div>'
+    featuredContainer.innerHTML += '<div class="featured" id="featured-3"></div>'
 }
 
-let featuredItemDesc2 = {
-    postImage: "images/products/tiki_chair.jpg",
-    postTitle: "Children's chair",
-    postPrice: "29.99",
-    postTag: allTags[0]
+function renderFeatured(){
+    function showFeatured1(){
+
+        let featured1 = document.querySelector('#featured-1')
+
+        featured1.innerHTML += '<div class="featured-image">   <img src="images/products/ironing_board.jpg" alt="May be an image of an ironing board refurbished into a table." width="100" height="100"> </div>'
+        featured1.innerHTML += '<div class="featured-heading"> <h3>Ironing board table</h3> </div>'
+        featured1.innerHTML += '<div class="featured-footer">   <span>$19.99</span>' + '<span>' +" · " +  featuredTags[0] + '</span>' + '</div>'
+
+        return featured1
+    }
+
+    function showFeatured2(){
+
+        let featured2 = document.querySelector('#featured-2')
+
+        featured2.innerHTML += '<div class="featured-image">   <img src="images/products/tiki_chair.jpg" alt="May be an image of a blue chair with flowers painted on it and the chair base is made of straw." width="100" height="100"> </div>'
+        featured2.innerHTML += '<div class="featured-heading">' + "<h3>Children's chair</h3>" +  '</div>'
+        featured2.innerHTML += '<div class="featured-footer">   <span>$14.99</span>' + '<span>' +" · " +  featuredTags[0] + '</span>' + '</div>'
+
+        return featured2
+    }
+
+    function showFeatured3(){
+
+        let featured3 = document.querySelector('#featured-3')
+
+        featured3.innerHTML += '<div class="featured-image">   <img src="images/products/elephant.jpg" alt="May be an image of a small pink elephant with flowers inside." width="100" height="100"> </div>'
+        featured3.innerHTML += '<div class="featured-heading"> <h3>Pink elephant</h3> </div>'
+        featured3.innerHTML += '<div class="featured-footer">   <span>$4.99</span>' + '<span>' +" · " +  featuredTags[0] + '</span>' + '</div>'
+
+        return featured3
+    }
+
+    showFeatured1()
+    showFeatured2()
+    showFeatured3()
 }
 
-let featuredItemDesc3 = {
-    postImage: "images/products/elephant.jpg",
-    postTitle: "Elephant",
-    postPrice: "14.99",
-    postTag: allTags[4]
-}
-
-
-function item1(){
-    image1.src         = featuredItemDesc1.postImage
-    title1.textContent = featuredItemDesc1.postTitle
-    price1.textContent = featuredItemDesc1.postPrice
-      tag1.textContent = featuredItemDesc1.postTag
-}
-
-function item2(){
-    image2.src         = featuredItemDesc2.postImage
-    title2.textContent = featuredItemDesc2.postTitle
-    price2.textContent = featuredItemDesc2.postPrice
-      tag2.textContent = featuredItemDesc2.postTag
-}
-
-function item3(){
-    image3.src         = featuredItemDesc3.postImage
-    title3.textContent = featuredItemDesc3.postTitle
-    price3.textContent = featuredItemDesc3.postPrice
-      tag3.textContent = featuredItemDesc3.postTag
-}
-
-item1()
-item2()
-item3()
+setFeaturedInnerHTML()
+renderFeatured()
 
