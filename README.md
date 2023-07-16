@@ -17,7 +17,7 @@ here is the Trello board for this: [Trello board](https://trello.com/b/YrxJq3GR/
 ## Currently working on (1.5.0) - Released late July
 1. Reworking homepage
 2. ~~Reworking nav menu~~
-3. Rework featured item logic, make it similar to the blog page
+3. ~~Rework featured item logic, make it similar to the blog page~~
 
 ## Up next (1.6.0) - Released early August
 1. Reworking shops page
