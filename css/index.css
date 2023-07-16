@@ -1,3 +1,23 @@
+::root{
+    --clr-action: #8f7efb;
+
+    --clr-primary-100: #FDFCFC;
+    --clr-primary-90: #e1e1e1;
+    --clr-primary-80: #d9d9d9;
+    --clr-primary-70: #f1f1f1;
+    --clr-primary-60: #f1f1f1;
+    --clr-primary-50: #f1f1f1;
+    --clr-primary-0: #080707;
+    --clr-primary-10: #0D0D0D;
+
+
+	--text: #080707;
+	--background: #fdfcfc;
+	--primary-button: #353331;
+	--secondary-button: #f5f5f4;
+	--accent: #0d0d0d;
+}
+
 html{
     overflow-x: hidden;
     width:100%;
@@ -24,6 +44,11 @@ html{
 	& > *{
 		margin-block: 1rem;
 	}
+}
+
+.hero p{
+    padding-inline:2rem;
+    text-wrap:balance;
 }
 
 .hero1{
@@ -62,18 +87,47 @@ html{
 	}
 }
 
-.post-container{
-    margin-inline:auto;
-    display:block;
-    width:100%;
-    margin-left:.3em;
+article{
+    text-align: center;
+    margin-inline:0;
+    padding-inline:0;
 }
 
-.post{
+section{
+    padding-block:1.5rem;
+}
+
+.featured-container{
+    margin-inline:auto;
+    width:100%;
+
+    display:grid;
+    grid-auto-flow: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: left;
+
+    margin-block:1rem;
+    gap:2rem;
+
+    &::-webkit-scrollbar{
+        background-color: #d9d9d9;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background-color:#b3b3b3;
+        border-radius:5rem;
+    }
+}
+
+.featured{
     margin-block:1rem;
     padding-block:0.5rem;
     padding-inline:.5rem;
     width:18.75rem;
+    height:26rem;
 
     position: relative;
 
@@ -81,7 +135,6 @@ html{
     border-radius:3px;
 
     &:hover{
-        /* background-color: var(--accent); */
         box-shadow:0px  0px 5px 0px #7e7e7e41;
     }
 
@@ -110,24 +163,9 @@ html{
     }
 }
 
-.post-container::-webkit-scrollbar{
-}
-
-.post-container::-webkit-scrollbar-thumb{
-    background-color: #c1c1c1;
-    border-radius: 250px;
-}
-
-@media only screen and (max-width:599px){
-    article{
-        text-align: center;
-        margin-inline:0;
-        padding-inline:0;
-    }
-
-    .post-container{
+@media only screen and (max-width:649px){
+    .featured-container{
         margin-inline:0rem;
-        display:block;
         width:100%;
         text-align: left;
         
@@ -135,56 +173,70 @@ html{
         align-items: center;
         justify-content: center;
         display:grid;
-        grid-auto-flow: row;
+        grid-auto-flow: row dense;
 
         overflow-x:scroll;
 
-        
-        
         gap:0rem;
-
-        
     }
 }
 
-@media only screen and (min-width:600px){
-    article{
-        text-align: center;
-        margin-inline:0;
-        padding-inline:0;
+@media only screen and (min-width:650px){
+    .featured-container{
+        display:flex;
+        flex-wrap: wrap;
+    
+        margin-block:1rem -1rem;
+        gap:0rem 2rem;   
     }
+}
 
-    .post-container{
-        margin-inline:3rem;
-        display:block;
+@media only screen and (min-width:1001px){
+
+    .featured-container{
+        margin-inline:auto;
         width:100%;
-        text-align: left;
-        
-
-        align-items: center;
+    
         display:grid;
         grid-auto-flow: column;
-
-        overflow-x:scroll;
-        
-        gap:2rem;
-    }
-}
-
-@media only screen and (min-width:1000px){
-
-    .post-container{
-        margin-inline:auto;
-        display:block;
-        width:100%;
-        text-align: left;
-        
-
+    
         align-items: center;
         justify-content: center;
-        display:grid;
-        grid-auto-flow: column;
-
+    
+        text-align: left;
+    
+        margin-block:1rem -1rem;
         gap:2rem;
     }
 }
+
+h2{
+    font-size:1.9rem;
+    margin-block:2rem;
+}
+
+.link-to{
+    font-size:1rem;
+    margin-block:0.75rem 0;
+    background-color: var(--primary-button);
+    background-color: #0d0d0d;
+    color: #f1f1f1;
+    display:inline-block;
+    padding:.4rem 1.2rem;
+    border-radius:.25rem;
+    
+    transition: linear .3s;
+    
+    cursor: pointer;
+    
+    & > a{
+        color: #FFF;
+        text-decoration:none;
+    }
+    
+    &:hover{
+        background-color: var(--accent);
+        background-color: #404040;
+    }
+}
+
