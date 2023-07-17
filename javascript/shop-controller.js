@@ -1,126 +1,88 @@
-var blogContainer = document.getElementById('shop-container')
-var templatePost = document.getElementById('shop-item');
+const shopContainer = document.querySelector('#shop-container')
 
-templatePost.style.display = "none"
-
-function cloneNodeFish(){
-    //creating blog
-    var newPost = templatePost.cloneNode(true);
-    newPost.setAttribute('id', "shop-3")
-
-    newPost.style.display = "block"
-
-    blogContainer.appendChild(newPost);
-
-    //blog content
-    let children = newPost.children
-    children[0].children[0].id = "image3"
-    image3.setAttribute('src', 'images/products/goldfish.jpg')
-    image3.setAttribute('alt', "May be an image containing gold-colored metal fish which is hung on a white-colored, wooden board wall.")
-
-    children[1].children[0].id = "header3"
-    children[2].id = "tags3"    
-
-    
-    children[3].children[0].id = "content3"
-
-    tags3.textContent = priceTags[0]
-    
-    header3.textContent = "Golden Fish"
-    content3.textContent = "Interested in fishing and ocean animals? This golden fish will match nicely with your style."
-
+function setShopInnerHTML(){
+    shopContainer.innerHTML += '<div class="shop-item" id="shop-6"></div>'
+    shopContainer.innerHTML += '<div class="shop-item" id="shop-5"></div>'
+    shopContainer.innerHTML += '<div class="shop-item" id="shop-4"></div>'
+    shopContainer.innerHTML += '<div class="shop-item" id="shop-3"></div>'
+    shopContainer.innerHTML += '<div class="shop-item" id="shop-2"></div>'
+    shopContainer.innerHTML += '<div class="shop-item" id="shop-1"></div>'
 }
-cloneNodeFish()
 
-function cloneNodeTable(){
-    //creating blog
-    var newPost = templatePost.cloneNode(true);
-    newPost.setAttribute('id', "shop-2")
+function renderItems(){
+    function showItem6(){
 
-    newPost.style.display = "block"
+        let shop6 = document.querySelector('#shop-6')
 
-    blogContainer.appendChild(newPost);
+        shop6.innerHTML += '<div class="item-img">'  + '<img src="../images/products/deepfrying_pan.jpg" alt="May be an image of a metal pan which is slightly rusty and has many holes in it, like ones of a deep frying pan.">' + '</div>'
+        shop6.innerHTML += '<div class="item-header">' +  "<h3>Deep frying pan</h3>" + '</div>'
+        shop6.innerHTML += '<div class="item-tags">' +  '<span>' + "$4.99 " + '</span>' + '<span>' + typeTags[4] + '</span>' + '</div>'
+        
+        return shop6
+    }
 
-    //blog content
-    let children = newPost.children
-    children[0].children[0].id = "image2"
-    image2.setAttribute('src', 'images/products/table_chair.jpg')
-    image2.setAttribute('alt', "May be an image containing a teal-blue colored chair and table. A white pillow with a heart knitted onto it sits in the chair. Both table and chair rest on a carpet.")
+    function showItem5(){
 
-    children[1].children[0].id = "header2"
-    children[2].id = "tags2"    
+        let shop5 = document.querySelector('#shop-5')
 
-    
-    children[3].children[0].id = "content2"
+        shop5.innerHTML += '<div class="item-img">'  + '<img src="../images/products/mini_dresser.jpg" alt="May be an image of a turqoise chair and table with a white pillow resting in the chair with a red heart printed on it.">' + '</div>'
+        shop5.innerHTML += '<div class="item-header">' +  "<h3>Mini-dresser</h3>" + '</div>'
+        shop5.innerHTML += '<div class="item-tags">' +  '<span>' + "$9.99 " + '</span>' + '<span>' + typeTags[4] + '</span>' + '</div>'
+        
+        return shop5
+    }
 
-    tags2.textContent = priceTags[5]
-    
-    header2.textContent = "Refurbished table"
-    content2.textContent = "Looking for a table to stylize your room? This rustic, Mint Julep colored, vintage table and chair collection will fit your room nicely."
+    function showItem4(){
 
+        let shop4 = document.querySelector('#shop-4')
+
+        shop4.innerHTML += '<div class="item-img">'  + '<img src="../images/products/white_wood_table.jpg" alt="May be an image of a white, wooden table decorated with various small items, including an elephant and books.">' + '</div>'
+        shop4.innerHTML += '<div class="item-header">' +  "<h3>White wooden table</h3>" + '</div>'
+        shop4.innerHTML += '<div class="item-tags">' +  '<span>' + "$49.99 " + '</span>' + '<span>' + typeTags[0] + '</span>' + '</div>'
+        
+        return shop4
+    }
+
+    function showItem3(){
+
+        let shop3 = document.querySelector('#shop-3')
+
+        shop3.innerHTML += '<div class="item-img">'  + '<img src="../images/products/musician.jpg" alt="May be an image of a sign reading music is life, hung on a wooden, white wall..">' + '</div>'
+        shop3.innerHTML += '<div class="item-header">' +  '<h3>"Music is life" sign</h3>' + '</div>'
+        shop3.innerHTML += '<div class="item-tags">' +  '<span>' + "$19.99 " + '</span>' + '<span>' + typeTags[1] + '</span>' + '</div>'
+        
+        return shop3
+    }
+
+    function showItem2(){
+
+        let shop2 = document.querySelector('#shop-2')
+
+        shop2.innerHTML += '<div class="item-img">'  + '<img src="../images/products/butter_churn.jpg" alt="May be an image of an old-fashioned, wooden, butter churn.">' + '</div>'
+        shop2.innerHTML += '<div class="item-header">' +  "<h3>Butter churn</h3>" + '</div>'
+        shop2.innerHTML += '<div class="item-tags">' +  '<span>' + "$9.99 " + '</span>' + '<span>' + typeTags[5] + '</span>' + '</div>'
+        
+        return shop2
+    }
+
+    function showItem1(){
+
+        let shop1 = document.querySelector('#shop-1')
+
+        shop1.innerHTML += '<div class="item-img">'  + '<img src="../images/products/flower_painting.jpg" alt="May be an image of a flower painting, titled Le bouqet bleu.">' + '</div>'
+        shop1.innerHTML += '<div class="item-header">' +  "<h3>Le Bouquet Bleu</h3>" + '</div>'
+        shop1.innerHTML += '<div class="item-tags">' +  '<span>' + "$34.99 " + '</span>' + '<span>' + typeTags[1] + '</span>' + '</div>'
+        
+        return shop1
+    }
+
+    showItem6()
+    showItem5()
+    showItem4()
+    showItem3()
+    showItem2()
+    showItem1()
 }
-cloneNodeTable()
 
-function cloneNodeQuoteBlocks(){
-    //creating blog
-    var newPost = templatePost.cloneNode(true);
-    newPost.setAttribute('id', "shop-1")
-
-    newPost.style.display = "block"
-
-    blogContainer.appendChild(newPost);
-
-    //blog content
-    let children = newPost.children
-    children[0].children[0].id = "image1"
-    image1.setAttribute('src', 'images/products/quote_blocks.jpg')
-    image1.setAttribute('alt', "Pieces of wood with motivational quotes and bible verses imprinted on them using stamps that are shaped like letters.")
-
-    children[1].children[0].id = "header1"
-    children[2].id = "tags1"    
-
-    
-    children[3].children[0].id = "content1"
-
-    tags1.textContent = priceTags[1]
-    
-    header1.textContent = "Quote blocks"
-    content1.textContent = "Need a little pick-me-up gift for a friend? Or just need a little motivation for yourself? These motivational blocks and bible verses will satisfy your desires."
-
-}
-cloneNodeQuoteBlocks()
-
-
-function cloneNodeFlag(){
-    //creating blog
-    var newPost = templatePost.cloneNode(true);
-    newPost.setAttribute('id', "shop-0")
-
-    newPost.style.display = "block"
-
-    blogContainer.appendChild(newPost);
-
-    //blog content
-    let children = newPost.children
-    children[0].children[0].id = "image0"
-
-    image0.setAttribute('src', 'images/products/flag.jpg')
-    image0.setAttribute('alt', "Pieces of wood with motivational quotes and bible verses imprinted on them using stamps that are shaped like letters.")
-
-    children[1].children[0].id = "header0"
-    children[2].id = "tags0"    
-
-    
-    children[3].children[0].id = "content0"
-
-    tags0.textContent = priceTags[2]
-    
-    header0.textContent = "American Flag"
-    content0.textContent = "Looking for some Fourth of July house decor? This wood flag will gladly and proudly represent the independence of our nation."
-
-}
-cloneNodeFlag()
-
-
-
-
+setShopInnerHTML()
+renderItems()
