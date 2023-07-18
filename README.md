@@ -14,13 +14,7 @@ here is the Trello board for this: [Trello board](https://trello.com/b/YrxJq3GR/
 ## Roadmap
 ### All dates listed here are subject to change depending on how development goes
 
-## Currently working on (1.6.0) - Released mid/late July
-1. Reworking shops page
-2. Reworking shop page logic, inspired by blog page
-3. Cleaner JS code
-4. Noscript fallbacks / unsupported CSS fallbacks
-
-## Up Next (1.7.0) - Released early/mid August
+## Currently working on (1.7.0) - Released early/mid July
 1. Creating about page
 2. Experiment with JS/MD to render page content
 
