@@ -44,7 +44,7 @@ function renderFeatured(){
 
         featured3.innerHTML += '<div class="featured-image">   <img src="../images/products/elephant.jpg" alt="May be an image of a small pink elephant with flowers inside." width="100" height="100"> </div>'
         featured3.innerHTML += '<div class="featured-heading"> <h3>Pink elephant</h3> </div>'
-        featured3.innerHTML += '<div class="featured-footer">   <span>$4.99</span>' + '<span>' +" · " +  featuredTags[0] + '</span>' + '</div>'
+        featured3.innerHTML += '<div class="featured-footer">   <span>$4.99</span>' + '<span>' +" · " +  featuredTags[4] + '</span>' + '</div>'
 
         return featured3
     }
