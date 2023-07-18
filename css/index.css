@@ -131,7 +131,9 @@ section{
     padding-block:0.5rem;
     padding-inline:.5rem;
     width:18.75rem;
-    height:26rem;
+    height:24rem;
+
+    /*if title is two lines long, bring height up to 26rem*/
 
     position: relative;
 
