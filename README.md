@@ -14,37 +14,29 @@ here is the Trello board for this: [Trello board](https://trello.com/b/YrxJq3GR/
 ## Roadmap
 ### All dates listed here are subject to change depending on how development goes
 
-## Currently working on (1.5.0-beta) - Released 7/16/23
-1. ~~Reworking homepage~~
-2. ~~Reworking nav menu~~
-3. ~~Rework featured item logic, make it similar to the blog page~~
-### Still working on (1.5.0-main) - Released mid/late July
-1. Using consistent design styles
-2. Implementing more sections to homepage to make it more inviting, desscriptive, etc
-3. Rewriting CSS code to be more efficient and removing any redundant/repeated code for faster load times and less load on server, as well as better readability
-
-## Up next (1.6.0) - Released early August
+## Currently working on (1.6.0) - Released mid/late July
 1. Reworking shops page
 2. Reworking shop page logic, inspired by blog page
 3. Cleaner JS code
 4. Noscript fallbacks / unsupported CSS fallbacks
 
-## Up Next (1.7.0) - Released mid/late august
+## Up Next (1.7.0) - Released early/mid August
 1. Creating about page
 2. Experiment with JS/MD to render page content
 
-## Up next (1.8.0) Released early September
+## Up next (1.8.0) Released mid/late August
 1. Contact page
 2. Experiment with forms to send email on submission
 
-## Up next (1.9.0) Released mid/late September
+## Up next (1.9.0) Released early/mid September
 1. Polishing website, fixing any bugs remaining
 2. Use consistent design decisions and styles throughout the whole website
 3. Clean up CSS code
 4. Brainstorm any other functionalities which could improve UX
-5. Prepare release to public
+5. UI improvements
+6. Prepare release to public
 
-## Up Next (2.0.0) Released early October
+## Up Next (2.0.0) Released mid/late September
 1. Release to public under temporary domain howesdecor.netlify.app
 2. Continue polishing website and creating more blogs, updating content as it comes, etc.
    
