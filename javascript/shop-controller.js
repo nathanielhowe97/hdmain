@@ -71,7 +71,7 @@ function renderItems(){
 
         shop1.innerHTML += '<div class="item-img">'  + '<img src="../images/products/flower_painting.jpg" alt="May be an image of a flower painting, titled Le bouqet bleu.">' + '</div>'
         shop1.innerHTML += '<div class="item-header">' +  "<h3>Le Bouquet Bleu</h3>" + '</div>'
-        shop1.innerHTML += '<div class="item-tags">' +  '<span>' + "$34.99 " + '</span>' + '<span>' + typeTags[1] + '</span>' + '</div>'
+        shop1.innerHTML += '<div class="item-tags">' +  '<span>' + "$34.99" + '</span>' + '<span>' + typeTags[1] + '</span>' + '</div>'
         
         return shop1
     }
