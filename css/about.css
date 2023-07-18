@@ -69,7 +69,7 @@ figcaption{
 
 @media screen and (max-width: 600px){
     .about-container, .story-container{
-        width:80%;
+        width:90%;
     }
 
     figcaption{
