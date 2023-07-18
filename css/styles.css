@@ -44,19 +44,17 @@ html, body{
 nav ul{
 	list-style-type:none;
 
-	& > li{
-		margin-block:.05rem;
-	}
+	
 }
 
 .nav-links-container{
 	display:block;
 	font-size:20px;
 	margin-left:-2px;
-}
 
-.nav-links-container a:hover{
-	text-decoration:underline;
+	& a:hover{
+		text-decoration: underline;
+	}
 }
 
 nav{
@@ -94,27 +92,12 @@ nav{
 			display:block;
 			width:100%;
 			cursor:pointer;
+			margin-block:.05rem;
+
 			&:hover{
 				text-decoration: underline;
 			}
 		}
-	}
-
-	& summary{
-		color:#FFF;
-	
-		position: absolute;
-		right:.5rem;
-		top:.5rem;
-		padding:.5rem;
-		font-size: 2rem;;
-
-		cursor: pointer;
-	
-		&::-webkit-details-marker{
-			display:none;
-		}
-
 	}
 }
 
@@ -136,18 +119,20 @@ nav{
 	}
 }
 
-details > summary::-webkit-details-marker {
-	display: none;
-  }
+nav details {
+	& > summary::-webkit-details-marker{
+		display:none;
+	}
 
-  summary{
-	position:absolute;
-	right:0;
-	top:0;
+	& summary{
+		position:absolute;
+	right:.9rem;
+	top:.9rem;
 	padding:.75em;
 	font-size:1rem;
 	cursor:pointer;
 	list-style: none;
+	}
 }
 
 .hidden-links{

@@ -36,10 +36,9 @@ html{
 
 	color:#ededed; 
 
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    background-position: center;
 
 	& > *{
 		margin-block: 1rem;
@@ -110,6 +109,10 @@ section{
 h2{
     font-size:1.9rem;
     margin-block:2rem;
+}
+
+.featured-footer{
+    margin-block:-.5rem;
 }
 
 .featured-container{
