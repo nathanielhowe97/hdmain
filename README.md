@@ -14,9 +14,9 @@ here is the Trello board for this: [Trello board](https://trello.com/b/YrxJq3GR/
 ## Roadmap
 ### All dates listed here are subject to change depending on how development goes
 
-~~## Up next (1.8.0) Released mid/late August
-1. Contact page
-2. Experiment with forms to send email on submission~~
+~~## Up next (1.8.0) - Polishing website and adding content
+1. polish up website
+2. add additional content to home page, products, etc
 
 ## Up next (1.9.0) Released early/mid September
 1. Polishing website, fixing any bugs remaining
