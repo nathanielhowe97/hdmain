@@ -100,7 +100,7 @@ section{
 }
 
 .featured-footer{
-    margin-block:-.5rem;
+    margin-block:0rem;
 }
 
 .featured-container{
@@ -289,6 +289,53 @@ section{
         white-space: pre;
     }
 }
+
+
+
+.socials-section{
+    margin-bottom:-2rem;
+
+    background-color: #e1e1e1;
+    /* background-color: var(--clr-primary-90); */
+
+    text-align: center;
+}
+
+.socials-container{
+    text-align: left;
+    width:65%;
+    margin-inline:auto;
+    padding:1rem;
+
+    justify-content: center;
+    align-items: start;
+
+    & p{
+        margin-block: -2rem;
+    }
+}
+
+h2{
+    text-wrap:balance;
+}
+
+@media only screen and (max-width:700px){
+    .socials-container{
+        width:90%;
+    }
+
+}
+
+@media only screen and (max-width:1000px){
+    .socials-container{
+        width:80%;
+    }
+}
+
+.socials-container > .follow{
+    margin-block:3rem !important;
+}
+
 
 
 
