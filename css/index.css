@@ -244,86 +244,37 @@ section{
 }
 
 
-
-.about-us-section{
-    padding-top:-1rem;
-
-    background-color: var(--clr-primary-70);
-    background-color: #cdcdcd;
-
-    text-align: center;
-}
-
-.about-container{
-    text-align: left;
-    width:65%;
-    margin-inline:auto;
-    padding:1rem;
-
-    justify-content: center;
-    align-items: start;
-
-    & p:nth-of-type(1){
-        margin-top:0rem;
-    }
-}
-
-@media only screen and (max-width:700px){
-    .about-container{
-        width:90%;
-    }
-
-    #about-para1::after{
-        content: "\a \a";
-        white-space: pre;
-    }
-}
-
-@media only screen and (max-width:1000px){
-    .about-container{
-        width:80%;
-    }
-    
-    #about-para1::after{
-        content: "\a \a";
-        white-space: pre;
-    }
-}
-
-
-
-.socials-section{
-    margin-bottom:-2rem;
-
-    background-color: #e1e1e1;
-    /* background-color: var(--clr-primary-90); */
-
-    text-align: center;
-}
-
-.socials-container{
-    text-align: left;
-    width:65%;
-    margin-inline:auto;
-    padding:1rem;
-
-    justify-content: center;
-    align-items: start;
-
-    & p{
-        margin-block: -2rem;
-    }
-}
-
-h2{
-    text-wrap:balance;
-}
-
-.wrapper{
+.about-wrapper{
     margin-inline:auto;
 
     & h2{
         text-wrap:balance;
+    }
+}
+
+.about-section{
+    position: relative;
+
+    margin-inline:auto;
+    text-align: left;
+
+    background-color: #cdcdcd;
+    padding:1rem 2rem;
+    border-radius:.3rem;
+
+    margin-block:2rem;
+}
+
+@media only screen and (min-width:1001px){
+    .about-wrapper{
+        width:100%;
+    }
+}
+
+@media only screen and (max-width:1000px){
+   #about-para1::after{
+        content: "\a \a";
+        white-space: pre;
     }
 }
 
@@ -348,20 +299,37 @@ h2{
     margin-block:2rem;
 }
 
-p{
-    margin-block:1rem .5rem;
+.socials-section p{
+    margin-block:2rem;
 }
+
+.about-section p{
+    margin-block:2rem 1rem;
+}
+
+.wrapper:nth-child(3){
+    margin-block:-4rem 2rem;
+    display:flex;
+}
+
+.about-section{
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 @media only screen and (min-width:1001px){
     .socials-wrapper{
+        width:100%;
+    }
+
+    .main-container{
         width:65%;
+        margin-inline:auto;
     }
 }
 
-.hidden-links{
-    opacity:1;
-    mix-blend-mode: normal;
-}
 
 
 
