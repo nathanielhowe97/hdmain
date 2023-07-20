@@ -43,6 +43,10 @@
     margin-block:2rem;
 }
 
+p{
+    margin-block:1rem .5rem;
+}
+
 @media only screen and (min-width:1001px){
     .wrapper{
         width:65%;
