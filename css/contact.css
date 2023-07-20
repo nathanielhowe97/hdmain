@@ -24,8 +24,9 @@
 
 .wrapper{
     margin-inline:auto;
+    text-align: center;
 
-    & h2{
+    & h3{
         text-wrap:balance;
     }
 }
@@ -56,4 +57,16 @@ p{
 .hidden-links{
     opacity:1;
     mix-blend-mode: normal;
+}
+
+h2{
+    margin-block:1.5rem 2.5rem;
+}
+
+p, h3{
+    margin-block:1rem;
+}
+
+h3{
+   font-size:1.5rem;
 }
