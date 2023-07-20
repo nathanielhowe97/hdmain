@@ -23,8 +23,11 @@
 }
 
 .wrapper{
-    width:65%;
     margin-inline:auto;
+
+    & h2{
+        text-wrap:balance;
+    }
 }
 
 .email-section{
@@ -40,16 +43,9 @@
     margin-block:2rem;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (min-width:1001px){
     .wrapper{
-        width:90%;
-    }
-
-}
-
-@media only screen and (max-width:1000px){
-    .wrapper{
-        width:80%;
+        width:65%;
     }
 }
 
