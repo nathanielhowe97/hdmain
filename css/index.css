@@ -169,6 +169,10 @@ section{
     }
 }
 
+.featured-footer{
+    margin-block:-1rem;
+}
+
 @media only screen and (max-width:649px){
     .featured-container{
 
@@ -218,7 +222,6 @@ section{
 
 .link-to{
     font-size:1rem;
-    margin-block:0.75rem 0;
     background-color: var(--primary-button);
     background-color: #0d0d0d;
     color: #f1f1f1;
@@ -226,7 +229,7 @@ section{
     padding:.4rem 1.2rem;
     border-radius:.25rem;
 
-    margin-block:1rem;
+    margin-block:-1rem 1rem;
     
     transition: linear .3s;
     
@@ -299,6 +302,10 @@ section{
     margin-block:2rem;
 }
 
+.follow{
+    padding-block: 1rem;
+}
+
 .socials-section p{
     margin-block:2rem;
 }
@@ -329,10 +336,3 @@ section{
         margin-inline:auto;
     }
 }
-
-
-
-
-
-
-

@@ -168,15 +168,17 @@ article, footer{
 	padding:2rem;
 }
 
-.section1:has(p) {
-	& > p{
-		margin-top:1rem;
-	}
-}
-
 h2{
     font-size:2rem;
+    margin-block:2rem;
+}
+
+p, h3{
     margin-block:1rem;
+}
+
+h3{
+   font-size:1.5rem;
 }
 
 
