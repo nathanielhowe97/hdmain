@@ -69,6 +69,7 @@ nav{
         object-fit: cover;
         border-radius: 15% 50%;
         outline:5px solid #10111e;
+        outline-offset: 5px;
     }
 }
 
