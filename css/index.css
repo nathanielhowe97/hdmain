@@ -68,7 +68,7 @@ nav{
         width:  35rem;
         object-fit: cover;
         border-radius: 15% 50%;
-        outline:2px #10111e;
+        outline:5px solid #10111e;
     }
 }
 
