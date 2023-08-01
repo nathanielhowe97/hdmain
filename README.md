@@ -7,11 +7,11 @@ here is the Trello board for this: [Trello board](https://trello.com/b/YrxJq3GR/
 ### All dates listed here are subject to change depending on how development goes
 
 ## Up next (1.9.0) Released early/mid August
-1. Polishing website, fixing any bugs remaining
+1. Polishing website, fixing any bugs remaining `✔️`
 2. Use consistent design decisions and styles throughout the whole website `!`
 3. Clean up CSS code `!`
-4. Brainstorm any other functionalities which could improve UX 
-5. UI improvements
+4. Brainstorm any other functionalities which could improve UX `✔️`
+5. UI improvements `✔️`
 6. Prepare release to public `!`
 
 ## Up Next (1.10.0) Released mid/late August
