@@ -239,6 +239,10 @@ section{
     margin-block:-1rem;
 }
 
+.featured-products-section h2{
+    font-size: 2rem;
+}
+
 @media only screen and (max-width:649px){
     .featured-container{
 

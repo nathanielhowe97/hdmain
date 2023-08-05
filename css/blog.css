@@ -140,8 +140,8 @@ h3{
     font-size:2rem;
 }
 
-.blog-header:not(.long){
-    margin-block:0 2.5rem;
+.blog-post:not(.long-head){
+    margin-block:0rem;
 }
 
 noscript{
