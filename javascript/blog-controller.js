@@ -1,15 +1,45 @@
 const blogContainer = document.querySelector('#blog-container')
 
 function setBlogInnerHTML(){
+    blogContainer.innerHTML += '<div class="blog-post" id="blog-8"></div>'
+    blogContainer.innerHTML += '<div class="blog-post" id="blog-7"></div>'
     blogContainer.innerHTML += '<div class="blog-post" id="blog-6"></div>'
     blogContainer.innerHTML += '<div class="blog-post" id="blog-5"></div>'
     blogContainer.innerHTML += '<div class="blog-post" id="blog-4"></div>'
     blogContainer.innerHTML += '<div class="blog-post" id="blog-3"></div>'
-    blogContainer.innerHTML += '<div class="blog-post" id="blog-2"></div>'
-    blogContainer.innerHTML += '<div class="blog-post" id="blog-1"></div>'
+    blogContainer.innerHTML += '<div class="blog-post long-head" id="blog-2"></div>'
+    blogContainer.innerHTML += '<div class="blog-post long-head" id="blog-1"></div>'
+
+    
 }
 
 function renderPosts(){
+    function showPost8(){
+
+        let blog8 = document.querySelector('#blog-8')
+
+        blog8.innerHTML += '<div class="blog-dates">    August 5, 2023 · 1 min read </div>'
+        blog8.innerHTML += `<div class="blog-tags">     <span> ${categoryTags[0]} </span> </div>`
+        blog8.innerHTML += '<div class="blog-header">   <h3>Wooden jack-o-lanterns</h3> </div>'
+        blog8.innerHTML += `<div class="blog-content">  <p>It might be summer outside but it's starting to feel like fall in the workshop today! These cute wooden jack-o-lanterns will soon be arriving at DeFrance Antiques on Beal.</p></div>`
+        blog8.innerHTML += '<div class="blog-cta">      <a class="view-img" href="../images/products/wooden_jack_o_lantern.jpg" target="_blank"> <span class="cta-text cta">See attached image</span> </a> </div>'
+
+        return blog8
+    }
+
+    function showPost7(){
+
+        let blog7 = document.querySelector('#blog-7')
+
+        blog7.innerHTML += '<div class="blog-dates">    August 2, 2023 · 1 min read </div>'
+        blog7.innerHTML += `<div class="blog-tags">     <span> ${categoryTags[0]} </span> <span>${categoryTags[7]}</span> </div>`
+        blog7.innerHTML += '<div class="blog-header">   <h3>Wooden dresser</h3> </div>'
+        blog7.innerHTML += `<div class="blog-content">  <p>If you're on the hunt for a classic wooden dresser - this beauty will be added to booth 228 at DeFrance Antiques on Beal Friday morning! After sanding this down, I saw the wood was perfectly beautiful and decided to keep her in her glory by just staining with Minwax Early American.</p></div>`
+        blog7.innerHTML += '<div class="blog-cta">      <a class="view-img" href="../images/products/wooden_dresser.jpg" target="_blank"> <span class="cta-text cta">See attached image</span> </a> </div>'
+
+        return blog7
+    }
+
     function showPost6(){
 
         let blog6 = document.querySelector('#blog-6')
@@ -88,6 +118,8 @@ function renderPosts(){
         return blog1
     }
 
+    showPost8()
+    showPost7()
     showPost6()
     showPost5()
     showPost4()

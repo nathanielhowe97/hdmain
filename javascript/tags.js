@@ -5,7 +5,8 @@ const categoryTags = [
     "holiday",     //3
     "returning",   //4
     "in progress", //5
-    "store"        //6
+    "store",       //6
+    "out of stock" //7
 ]
 
 const typeTags = [
