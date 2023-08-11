@@ -1,7 +1,7 @@
 :root{
 --text: #0d0d0d;
 --subtitle: #0d0d0d;
---background: #ebebebb1;
+--background: #f4f4f4;
 --primary-button: #404040;
 --secondary-button: #ffffff;
 --accent: #0d0d0d;
@@ -9,7 +9,7 @@
 
 .blog-post{
     background-color: var(--background);
-    background-color: #ebebebb1;
+    background-color: #f4f4f4;
 
     position:relative;
 
@@ -91,13 +91,20 @@ h3{
     color:#080707e9;
 }
 
+.pinned{
+    font-size:1rem;
+    transform: rotate(45deg);
+    margin-left:2rem;
+    align-items: center;
+}
+
 .blog-tags span{
     margin-inline:0 1rem;
     font-size:.75rem;
     margin-block:0.75rem 0;
     background-color: var(--accent);
     background-color: #0d0d0d;
-    color: #f1f1f1;
+    color: #f4f4f4;
     display:inline-block;
     padding:.4rem 1rem;
     border-radius:2rem;
@@ -108,7 +115,7 @@ h3{
     margin-block:0.75rem 0;
     background-color: var(--primary-button);
     background-color: #0d0d0d;
-    color: #f1f1f1;
+    color: #f4f4f4;
     display:inline-block;
     padding:.4rem 1.2rem;
     border-radius:.25rem;

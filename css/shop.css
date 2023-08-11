@@ -1,7 +1,7 @@
 :root{
     --text: #0d0d0d;
     --subtitle: #0d0d0d;
-    --background: #e8e8e8;
+    --background: #f4f4f4;
     --primary-button: #404040;
     --secondary-button: #ffffff;
     --accent: #0d0d0d;
@@ -16,7 +16,7 @@ article{
     text-align: left;
 
     background-color: var(--background);
-    background-color: #ebebebb1;
+    background-color: #f4f4f4;
 
     display:grid;
 
