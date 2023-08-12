@@ -68,7 +68,13 @@ nav{
         width:  35rem;
         object-fit: cover;
         border-radius: 15% 50%;
-        outline:10px solid #10111e;
+    }
+
+    @media only screen and (max-width:600px) {
+        .hero-img{
+            height:25rem;
+            width: 25rem;
+        }
     }
 }
 
@@ -181,15 +187,6 @@ section{
 
     margin-block:1rem;
     gap:2rem;
-
-    &::-webkit-scrollbar{
-        background-color: #d9d9d9;
-    }
-
-    &::-webkit-scrollbar-thumb{
-        background-color:#b3b3b3;
-        border-radius:5rem;
-    }
 }
 
 .featured{
@@ -203,7 +200,7 @@ section{
 
     position: relative;
 
-    background-color: #e8e8e8;
+    background-color: #f4f4f4;
     border-radius:3px;
 
     &:hover{
@@ -268,6 +265,7 @@ section{
     
         margin-block:1rem -1rem;
         gap:0rem 2rem;   
+        text-align: left;
     }
 }
 
@@ -408,5 +406,11 @@ section{
     .main-container{
         width:65%;
         margin-inline:auto;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .hero-img{
+        height:
     }
 }
