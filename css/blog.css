@@ -53,6 +53,10 @@
     #header0, #header2{
         margin-bottom:1rem;
     }
+
+    .blog-post{
+        margin-block:1rem;
+    }
 }
 
 @media only screen and (min-width:750px){
@@ -147,9 +151,6 @@ h3{
     font-size:2rem;
 }
 
-.blog-post:not(.long-head){
-    margin-block:0rem;
-}
 
 noscript{
     margin-block:1rem;
