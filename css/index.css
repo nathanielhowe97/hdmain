@@ -143,8 +143,11 @@ nav{
         }
 
         & .hero-img{
-            width: 15rem !important;
-            height:15rem !important;
+            margin-left:-100px;
+            width: 150% !important;
+            height:17.5rem !important;
+            border-radius: 0;
+
         }
     }
 }
