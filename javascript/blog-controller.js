@@ -21,7 +21,7 @@ function renderPosts(){
 
         let blog9 = document.querySelector('#blog-9')
 
-        blog9.innerHTML += `<div class="blog-dates">    August 8, 2023 · 2 min read <span class="material-symbols-outlined pinned">push_pin</span> </div>`
+        blog9.innerHTML += `<div class="blog-dates">    August 8, 2023 · 2 min read <span id="pinned" class="material-symbols-outlined pinned">push_pin</span> </div>`
         blog9.innerHTML += `<div class="blog-tags">     <span>${specialTags[0]}</span> <span>${categoryTags[9]}</span> </div>`
         blog9.innerHTML += `<div class="blog-header">   <h3>Fall booth reset</h3> </div>`
         blog9.innerHTML += `<div class="blog-content">  <p>The fall booth reset is here! As we continue to get deeper into the season, you'll continue seeing some more fall decor start popping up in the booth. Check it out at booth 228 at Defrance Antiques on Beal.</p></div>`
@@ -134,7 +134,8 @@ function renderPosts(){
         return blog1
     }
 
-    showPost9()
+    showPost9() //pinned
+
     showPost8()
     showPost7()
     showPost6()
