@@ -156,5 +156,13 @@ noscript{
     margin-block:1rem;
 }
 
+h3:not(.long) {
+    margin-bottom:2rem;
+}
+
+.long ~ .blog-content > p{
+    margin-top:-1.5rem
+}
+
 
 

@@ -147,7 +147,6 @@ nav{
             width: 150% !important;
             height:17.5rem !important;
             border-radius: 0;
-
         }
     }
 }
@@ -205,10 +204,6 @@ section{
 
     background-color: #f4f4f4;
     border-radius:3px;
-
-    &:hover{
-        box-shadow:0px  0px 5px 0px #7e7e7e41;
-    }
 
     & .content-container{
         display:block;
@@ -409,11 +404,5 @@ section{
     .main-container{
         width:65%;
         margin-inline:auto;
-    }
-}
-
-@media only screen and (max-width:700px) {
-    .hero-img{
-        height:
     }
 }

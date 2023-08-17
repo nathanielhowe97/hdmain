@@ -129,12 +129,12 @@ nav details {
 
 	& summary{
 		position:absolute;
-	right:.9rem;
-	top:.9rem;
-	padding:.75em;
-	font-size:1rem;
-	cursor:pointer;
-	list-style: none;
+		right:.9rem;
+		top:.9rem;
+		padding:.75em;
+		font-size:1rem;
+		cursor:pointer;
+		list-style: none;
 	}
 }
 
