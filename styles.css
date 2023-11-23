@@ -50,6 +50,7 @@ img{
     --clr-75: #ececec;
     --clr-100: #ececf6;
     --clr-accent: #6464a2;
+    --clr-accent-active: #8b8bc0;
 
     --ff-sans-serif: 'Roboto', 'Helevtica', sans-serif;
 
@@ -344,6 +345,17 @@ footer{
     color: var(--clr-100);
     font-weight: var(--fw-semibold);
     text-decoration: none;
+
+    outline: 2px solid var(--clr-50);
+
+    outline-offset: 2px;
+
+    transition: .15s linear;
+
+    &:hover, &:focus-visible{
+        outline-color: var(--clr-accent-active);
+        background-color: var(--clr-accent-active);
+    }
 }
 
 .primary-heading{
@@ -394,6 +406,10 @@ footer{
         & img{
             max-height:65%;
         }
+
+        & .body-copy{
+            font-size: var(--fs-medium);
+        }
     }
 
     .primary-heading{
@@ -415,4 +431,88 @@ footer{
         font-size: var(--fs-medium) !important;
     }
 
+}
+
+@media only screen and (min-width:892px){
+    header{
+        align-items: center;
+        min-height: 90vh;
+        min-height: 90dvh;
+
+        & img{
+            max-width: 67%;
+            object-fit: cover;
+            object-position: 100% 28%;
+        }
+    }
+}
+
+@media only screen and (min-width:1320px){
+
+    .wrapper{
+        max-width:70%;
+        margin-inline:auto;
+    }
+
+    header{
+        display:flex;
+        /* margin-block:3rem 0; */
+        justify-content: space-between !important;
+
+        & img{
+            max-height:30rem;
+            max-width:unset;
+        }
+
+        & .body-copy{
+            font-size: var(--fs-regular);
+        }
+    }
+
+    .primary-heading{
+        font-size:var(--fs-xlarge);
+        font-weight:var(--fw-bold);
+    
+        line-height: 0.9;
+        letter-spacing: -2px;
+    
+        margin-block:1rem;
+    }
+    
+    .secondary-heading{
+        font-size:var(--fs-large);
+        font-weight:var(--fw-semibold);
+    }
+
+    .unaffected{
+        font-size: var(--fs-medium) !important;
+    }
+
+    .two-columns{
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    img{
+        width:100% !important;
+    }
+
+    .body-copy{
+        font-size: var(--fs-medium) !important;
+    }
+
+    footer{
+        margin-block:10rem 0;
+    }
+}
+
+@media only screen and (min-width: 1800px){
+    header{
+
+        & img{
+            max-width:100% !important;
+            max-height:100% !important;
+        }
+    }
 }
