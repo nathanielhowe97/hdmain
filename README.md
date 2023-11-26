@@ -6,7 +6,7 @@ here is the Trello board for this: [Trello board](https://trello.com/b/YrxJq3GR/
 ## Roadmap
 All dates listed here are subject to change depending on how development goes
 
-## In Progress (1.11.0) Released early-mid December
+## In Progress (1.11.0) Release: early-mid December
 1. Recode in HTML
 2. Add all core Javascript functionality
 3. New UI & style guide
